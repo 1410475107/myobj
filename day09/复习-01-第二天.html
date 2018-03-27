@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复习-第二天</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.f{
+				width: 300px;
+				height: 300px;
+				background-color: #d20;
+				margin-top: 100px;
+				margin-left: 100px;
+			}
+
+			.s{
+				width: 200px;
+				height: 200px;
+				background-color: #f00;
+				margin-top: 50px;
+				margin-left: 50px;
+			}
+		</style>
+</head>
+<body>
+<div class="f">
+	<div class="s"></div>
+</div>
+
+	<div class="container">
+		<h3>第二天知识点</h3>
+		<ol>
+			<li>
+				表单：
+				<pre>
+				标签：form；
+				属性：	action指定了表单数据处理的地址，如：getdata.jsp
+						name定义表单的名称；
+						method指定了数据的处理方式，可选值：GET和POST，GET是默认值；
+							GET的时候，提交的数据会出现在地址栏里面，数据有大小限制，安全性较低；
+							POST的时候，数据在后台传输，地址栏里面看不到，没有大小限制；
+						id、class属性是可以使用的；
+				</pre>
+				数据输入：
+				<pre>
+					input：输入框或者是单选按钮或者是复选框
+					属性：
+						type：指定输入框类型；
+							text：文本输入框；
+							button：普通的按钮；
+							radio：单选按钮，一组单选按钮，他们的name属性值必须一致；
+							checkbox：复选框，一组复选框，他们的name属性值要一致；
+							submit：提交按钮，会提交表单数据到action指定的地址；
+							reset：重置按钮，重置当前表单到原始状态，注意<code>不是简单的清空输入框内容</code>；
+							password：密码输入框，视觉效果加密，实际数据并没有加密;
+							file：用于上传文件，可以是文档、图片等；
+							HTML5新加的：number、tel、date、time、datetime-local、color、email、url、range等；
+					select：下拉框，选项使用option设置；
+							有单选和多选，默认就是单选；
+							属性multiple可以把select设置成多选；默认就是单选；
+
+					textarea：多行文本；
+							rows属性定义高度，就是指多少行；
+							cols属性定义宽度，就是指多少列；
+				</pre>
+			</li>
+			<li>
+				CSS：层叠样式表；和HTML有三种结合方式：
+				<pre>
+					1，行内样式，使用style属性；
+					2，嵌入样式：使用style标签；
+					3，引入或者叫外联样式：使用link标签引入css文件，href属性指定css文件路径；
+				</pre>
+			</li>
+			<li>
+				选择器：定义的css样式和对应的元素关联起来；
+						语法结构：选择器{属性:值;属性:值;属性:值;属性:值;}
+			</li>
+			<li>
+				学习过的选择器：
+				<pre>
+					1，标签选择器：直接使用标签名作为选择器名，如：div{width:200px;height:120px;border:1px solid #f21}；
+					2，类选择器：< div class="myclass">内容< /div>，定义：.myclass{width:200px;height:120px;}；
+					3，id选择器：< div id="myclass">内容< /div>，定义：#myclass{width:200px;}，注意：id要保证唯一性；
+					4，交叉选择器：div.myclass 对应的是div标签并且class是myclass；
+					5，后代选择器：两个选择器之间使用空格分开，后代包括子子孙孙；
+					6，子代选择器：两个选择器之间使用>连接，只选择儿子；
+					7，伪类选择器：不同的状态表现出不同的样式，:link、:hover、:active、:visited、:focus（获取焦点的）；
+					8，after和before：直接给元素的后面和前面追加内容，并且可以给追加的内容单独定义样式；
+					9，结构性伪类选择器：
+							:root、:not(.myclass):not(.mydiv)、nth-child(2n+1)、nth-of-type(3)
+							、first-child、last-child、nth-last-child(和nth-child是一样的，只是排序是从后向前)；
+					10，属性选择器：选择器后面跟中括号设置属性条件，input[type="radio"][name="course"]；
+					11，兄弟选择器：+表示第一个兄弟，~表示全部兄弟；
+					12，通配符选择器：*，一般用于清除浏览器默认的样式；
+					13，群组选择器：多个选择器的样式定义在一起，使用逗号(,)分开；
+				</pre>
+			</li>
+			<li>
+				比较常见和重要的属性和值：
+				<pre>
+					定义文字：
+						font-size:定义文字大写；
+						font-family：定义字体；
+						color:定义文字颜色；
+						font-weight：定义文字粗细的。100表示不加粗，bolder表示加粗；
+						text-decoration：定义下划线，none表示没有，underline表示有，overline表示上划线，line-through表示删除线；
+						letter-spaceing：定义文件间距；
+						text-indent：定义文字缩进的，常用于段落缩进两个字：2em；
+						font-style:定义文字的样式，常用于清除i、em等标签的文字倾斜；
+
+					定义背景的：
+						background-color：定义背景颜色，颜色值使用十六进制（0-9a-f），要么是3位要么是6位；
+											支持rgb(201, 202, 203)，取值范围0-255；
+											rgba(0, 0, 0, .3)定义透明的背景颜色；
+						background-image：使用url(图片路径)指定使用的背景图片
+								配套属性：
+								background-position(x, y)：对背景图片进行定位，支持10px, -50px,left,right,center, 20%；
+								background-size：指定背景图片尺寸,可以设置宽度高度，还可以使用cover、container；
+
+					盒子常用属性：
+						width:定义宽度，单位是px；
+						height：定义高度，单位是px；
+						display:
+							none:隐藏，消失，不会占用原来的位置； visibility:hidden隐藏后，还会占用自己的位置；
+							block：显示出来；把行级标签转换成块级标签；
+							inline：把块级标签转成行级标签；
+							inline-block：把元素转成行内块级标签；
+						border：定义边框线，参数：粗细 样式 颜色， 如：border:3px solid #f90;
+						border-radius：定义圆角的；
+						text-align：内容在水平方向的对齐方式，对标签元素不起作用；值：left、center、right、justify；
+						text-align-last: justify; 结合text-align: justify实现文字两端对齐；
+						vertical-align：定义在垂直方向的对齐方式，值：top、middle、bottom，需要结合：display:table-cell;
+						transform实现变形：
+							旋转：roate(30deg)、移动：translate(30px, 20px)、缩放：scale(1.2)、扭曲：skew(20deg, 30deg)、
+							3D效果：rotateX(20deg)、rotateY(10deg)、rotateZ(30deg)
+						overflow:内容超出盒子的时候如何处理
+							hidden：超出部分隐藏；
+							auto：超出是会出现滚动条；
+							scroll：默认就有滚动条；
+						padding：定义内边距；
+						margin：对应外边距；margin-top会和父级盒子的margin-top重叠；
+						box-shadow:盒子阴影， x方向偏移量  y轴方向偏移量  模糊程度  扩展半径  颜色；
+				</pre>
+			</li>
+			<li>
+				选择器的优先级：行内样式 > ID选择器 > 类选择器  > 标签选择器 > 通配符选择器;  <br>
+				如果选择器是同一类型的，遵守  就近原则；
+			</li>
+
+			<li>
+				浮动：
+					<pre>
+						1，脱离基本的文档流；
+						2，如果前面是块级元素，浮动的元素不会浮动上去；
+						3，没有浮动属性的元素，忽略有浮动属性元素的存在；
+						4，使用完浮动以后，最好清除浮动，免得对后面的布局产生影响；
+					</pre>
+			</li>
+
+			<li>
+				定位：position
+				<pre>
+
+					分类：
+						绝对定位：absolute,相对于有定位属性的父级进行定位；
+							如果他的直接父级没有定位属性，会向上级寻找有定位属性的元素，直到找到body结束；
+
+						相对定位：relative,相对于自己进行定位，自己的原始位置会保留；一般来讲，我们给一个元素设置相对定位属性，是为了方便他的子元素进行绝对定位；
+
+						固定定位：fixed,相对于当前窗口进行定位;
+
+						static代表没有定位属性；
+				</pre>
+				定位用到的css属性：
+				<pre>
+					top：	上偏移量；
+					left：	左偏移量；
+					right：	右偏移量，如果有左偏移量，右偏移量失效；
+					bottom；下偏移量，如果有上偏移量，下偏移量失效；
+				</pre>
+			</li>
+		</ol>
+	</div>
+</body>
+</html>

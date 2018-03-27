@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>盒子阴影效果</title>
+	<style>
+		.myclass{
+			margin: 50px;
+			width: 300px;
+			height: 300px;
+			background-color: #eee;
+		}
+
+		.myclass:hover{
+			width: 400px;
+			height: 400px;
+			background-color: #f2d;
+			/*定义盒子阴影：x偏移量、y偏移量、模糊程度、扩展半径、阴影的颜色*/
+			box-shadow: 10px 10px 50px 20px #f00;
+			transition: width 1s, height 1s, background-color 1s;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="myclass">
+		
+	</div>
+</body>
+</html>

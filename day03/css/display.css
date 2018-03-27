@@ -1,0 +1,18 @@
+*{margin: 0; padding: 0;}  /*清空浏览器默认的样式*/
+
+a{
+	border:1px solid #d11;
+	width: 200px;
+	height: 52px;
+	background-color: #df4;
+	/*行内标签转块级标签*/
+	display: inline-block;
+}
+
+div{
+	border:1px solid #234;
+	width: 200px;
+	height: 52px;
+	background-color: #d12;
+	display: inline;
+}

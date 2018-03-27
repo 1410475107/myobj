@@ -1,0 +1,57 @@
+.mydiv{
+	width: 100px;
+	height: 100px;
+	border: 1px solid #f00;
+}
+
+
+p:after{
+	content:'';
+}
+
+p:before{
+	content:'星期三，';
+}
+
+/*对话框样式定义*/
+.dialog{
+	color: #333;
+	width: 200px;
+	height: 42px;
+	line-height: 42px;
+	background-color: #a0e959;
+	padding-left: 15px;
+	border: 1px solid #f00;
+	border-radius: 6px;
+	position: relative;
+}
+
+.dialog:before{
+	content: '';
+	display:block; /*转成块级元素*/
+	width: 0px;
+	height: 0px;
+	border: 11px solid #fff;  
+	/*边框线变成透明的*/
+	border-color: transparent;
+	border-left-color: #f00;
+	position: absolute;
+	left:100%;
+	top: 50%;
+	margin-top: -11px;
+}
+
+.dialog:after{
+	content: '';
+	display:block; /*转成块级元素*/
+	width: 0px;
+	height: 0px;
+	border: 10px solid #fff; 
+	/*边框线变成透明的*/
+	border-color: transparent;
+	border-left-color: #a0e959;
+	position: absolute;
+	left:100%;
+	top: 49%;
+	margin-top: -10px;
+}

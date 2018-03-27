@@ -1,0 +1,10 @@
+.mydiv{
+	border:1px solid #b51a3e; /*定义边框线：粗细  样式 颜色*/
+	width:200px;/*定义盒子的宽度*/
+	height:300px;
+	margin:50px;/*定义外边距*/
+	padding:60px;  /*定义盒子的内边距*/
+	background-color: #f2d; /*定义背景颜色*/
+	background-image: url(../../day02/img/5a9dfd21N14ae841d.jpg);/*定义背景图片*/
+	background-position:center; /*让背景图片和盒子中心重叠*/
+}

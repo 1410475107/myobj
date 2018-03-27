@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>新标签-表单的input标签的新类型</title>
+</head>
+<body>
+	
+	<form action="">
+		<!-- 只能输入数字 -->
+		数字输入框：<input type="number" name="num" id="num" min="20" max="100" step="5"> <br>
+		<!-- 时间 -->
+		日期选择器：<input type="date" name="date123" id="date123">  <br>
+		时间选择器：<input type="time" name="time123" id="time123">   <br>
+		完整的：	<input type="datetime-local" name="time123" id="time123">  <br>
+
+		邮箱：		<input type="email" name="email" id="email">  <br>
+		个人网站：	<input type="url" 	name="url" 	id="url">  <br>
+		颜色：		<input type="color" name="c" id="c" value="#FF0000"><br>
+		范围：		<input type="range" name="r" id="r"><br>
+		<!-- required：输入框信息必填 -->
+		手机号：	<input type="tel" name="t" id="t" required><br>
+		<input type="submit" value="提交表单">
+	</form>
+
+
+</body>
+</html>

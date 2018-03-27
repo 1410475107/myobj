@@ -1,0 +1,53 @@
+/*浏览器默认样式清除*/
+*{
+	margin: 0;
+	padding: 0;
+	left:0;
+	top: 0;
+}
+body{
+	font-family: 微软雅黑;
+	font-size: 14px;
+	color: #333;
+	text-decoration: none;
+}
+/*默认状态*/
+a:link, a:visited{
+	color: #ccc;
+	text-decoration: none;
+}
+/*鼠标移入状态*/
+a:hover{
+	color: #f2a;
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+/*鼠标摁下状态*/
+a:active{
+	color: #d21;
+	font-family:  楷体;
+	font-size: 20px;
+	text-decoration: none;/*去掉下划线*/
+}
+
+.mydiv:hover{
+	width: 200px;
+	height: 200px;
+	background-color: #f2d;
+	color: #fff;
+}
+
+/*display:none*/
+.mydiv p{
+	display: none; /*隐藏*/
+}
+
+/*鼠标移入div显示p标签的文字信息*/
+.mydiv:hover p{
+	display: block;  /*显示一个元素*/
+}
+
+.mydiv+div{
+	background-color: #d12;
+}

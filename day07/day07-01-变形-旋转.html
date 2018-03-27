@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转</title>
+	<style>
+		.mydiv{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #eee;
+			/*background-color: #f2d;*/
+			transform-origin: 50% 50%;  /*定义旋转基点*/
+			background-color:rgba(201, 240, 20, .2);
+			transform: rotate(30deg);  /*正数表示顺时针，负数表示逆时针*/
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			z-index: 2;
+		}
+
+		.div1{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #eee;
+			background-color: #ddd;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			z-index: 1;
+
+		}
+		
+	</style>
+
+</head>
+<body>
+	<div class="mydiv"></div>
+	<div class="div1">123</div>
+
+</body>
+</html>

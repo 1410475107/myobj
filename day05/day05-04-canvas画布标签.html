@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas标签</title>
+    <style type="text/css"> #mycanvas{ border: 1px solid #ccc;width:500px;height:500px;} </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="mycanvas" width="500" height="500">
+            浏览器不支持，请升级
+        </canvas>
+    </div>
+    <script type="text/javascript">
+        var mycanvas = document.getElementById('mycanvas');
+        var c        = mycanvas.getContext('2d');//得到一个上下文对象
+        c.beginPath();
+        c.strokeStyle = 'red';
+        c.moveTo(80, 120);//起点坐标(80, 120)
+        c.lineTo(300, 300);//起点坐标(80, 120) 终点坐标(300, 300)
+        c.lineTo(200, 100);//起点坐标(300, 300) 终点坐标(200, 100)
+        c.closePath();//起点和终点连接起来
+
+        //再单独画一条线
+        c.moveTo(300, 200);
+        c.lineTo(300, 500);
+        //再单独画一条线
+        c.moveTo(400, 200);
+        c.lineTo(400, 500);
+        //再单独画一条线
+        c.moveTo(300, 200);
+        c.lineTo(400, 200);
+
+        c.fill();//填充上面两根线环绕的区域
+        c.stroke();//开始绘制图形
+    </script>
+</body>
+</html>

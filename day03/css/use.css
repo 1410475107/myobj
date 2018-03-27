@@ -1,0 +1,16 @@
+*{margin: 0; padding: 0;}  /*清空浏览器默认的样式*/
+#mydiv{
+	color: blue;
+}
+
+div{
+	color: #f78;
+}
+
+.myclass1{
+	color:#d67;
+}
+
+.mydiv{
+	color: green;
+}

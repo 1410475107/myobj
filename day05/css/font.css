@@ -1,0 +1,40 @@
+.myp i{
+	font-style: normal;/*清除i标签的斜体样式*/
+}
+.myp{
+	font-size: 18px;
+}
+.myp{
+	font-variant: small-caps; /*不怎么常用*/
+	letter-spacing: 1em; /*定义字间距*/
+}
+/*上标字*/
+.vertical i{
+	font-style: normal; 
+	font-size: 12px;
+	vertical-align: super;/*super表示上标字，sub表示下标字*/
+	color: #f2d;
+}
+.decoration{
+	/*text-decoration: overline;    顶端线*/
+	/*text-decoration: line-through; 删除线效果*/
+	text-decoration: underline;
+	/*text-decoration: none;*/  /*去掉下划线*/
+
+}
+.letter{
+	border: 1px solid #f56;
+	/*首字母大写*/
+	text-transform: capitalize;
+	text-indent: 2em;
+}
+
+.align{
+	border: 1px solid #f56;
+	width: 50px;
+	height: 200px;
+	text-align: left;
+	/*如果想vertical-align属性生效，需要设置display的值为table-cell*/
+	display: table-cell;
+	vertical-align:middle; /*文在在垂直方向居中，还支持top和bottom*/
+}

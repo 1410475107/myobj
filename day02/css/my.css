@@ -1,0 +1,53 @@
+/*标签选择器*/
+li{
+	color: blue;
+}
+/*交集选择器，选择器名称中间没有空格*/
+li.myli{
+	color: red;
+	font-size: 25px;
+	font-weight: bolder;
+}
+
+.div{
+	color: green;
+}
+
+.myclass{
+	/*定义宽度*/
+	width:300px;
+	/*定义告诉*/
+	height: 600px;
+	/*定义边框线*/
+	border:3px dashed #698;
+	/*字体大小*/
+	font-size: 24px;
+	/*字体：多个字体使用逗号分开，依次选择，前面的优先选择*/
+	font-family:楷体, "Microsoft YaHei";
+}
+
+.mydiv{
+	/*字体是否加粗*/
+	font-weight: bolder;
+	/*颜色*/
+	color: red;
+	/*定义字体大小*/
+	font-size: 42px;
+	width: 800px;
+	height: 80px;
+	border:1px solid #f24;
+	/*文字在水平方向的位置：right 右  center  中*/
+	text-align: center;
+	/*通过定义行高的让文字垂直方向居中*/
+	line-height:80px;
+
+	/*定义外边距：margin*/
+	/*margin-top:50px;*/
+	/*margin:50px;*/  /*四个方向外边距都是50*/
+	/*margin:50px 100px; */ /*上下是50px，左右是100排序*/
+	/*margin:50px 80px 100px;*/ /*上是50，左右是80，下是100*/
+	/*margin:50px 80px 100px 120px;*/ /*上右下左*/
+
+	/*实现元素在水平居中：margin的左右外边距是auto*/
+	margin:100px auto;
+}

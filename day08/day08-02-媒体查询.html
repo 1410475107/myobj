@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>媒体查询</title>
+	<style>
+		html{
+			background-color: #f00;
+		}
+
+		/*根据屏幕宽度显示不同的样式*/
+		.small{
+			display: none;
+		}
+		/*screen：指定设置设备为电脑、平板、手机*/
+		@media screen and (max-width: 960px){
+			.small{
+				display: block;
+			}
+			.small:hover ul{
+				display: block;
+			}
+			ul.menu{
+				display: none;
+			}
+		}
+		/*针对手机定义布局*/
+		@media screen and (max-width: 480px){
+			.small{
+				display: none;
+			}
+			ul.menu{
+				display: none;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="small">
+	小按钮
+		<ul>
+			<li>小菜单1</li>
+			<li>小菜单2</li>
+			<li>小菜单3</li>
+		</ul>
+	</div>
+
+	<ul class="menu">
+		<li>菜单1</li>
+		<li>菜单2</li>
+		<li>菜单3</li>
+		<li>菜单4</li>
+		<li>菜单5</li>
+	</ul>
+
+	<ol>
+		<li>标签选择器</li>
+		<li>类选择器</li>
+		<li>ID选择器</li>
+		<li>后代选择器</li>
+		<li>子代选择器</li>
+		<li>交集选择器</li>
+		<li>群组选择器</li>
+		<li>结构性伪类选择器</li>
+		<li>通配符选择器</li>
+		<li>伪类选择器</li>
+		<li>after\before选择器</li>
+		<li>属性选择器</li>
+	</ol>
+</body>
+</html>

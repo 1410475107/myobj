@@ -1,0 +1,96 @@
+*{margin: 0; padding: 0;}  /*清空浏览器默认的样式*/
+body{
+	font-family: 微软雅黑;/*定义字体*/
+}
+.myp{
+	cursor:pointer;/*定义鼠标形状的*/
+	position: relative; /*为了子代使用绝对定位属性*/
+	text-align: center;/*内容水平方向居中*/
+	width: 235px;
+	height: 300px;
+	border:1px solid #f5e;
+	margin: 50px auto; /*定义外边距，左右是auto代表在水平方向居中*/
+}
+
+.myp .top{
+	width: 64px;
+	height: 20px;
+	background-color: #e53935;
+	color: #fff;  /*定义字体颜色*/
+	text-align: center;/*字体在水平方向居中*/
+	line-height: 20px; /*定义文字在垂直方向居中*/
+	font-size: 12px; /*定义字体大小*/
+	margin: 0 auto;
+}
+
+.myp img{
+	width: 150px;
+	height: 150px;
+	margin-top:15px;/*上边距*/
+	margin-bottom:13px;/*下边距*/
+}
+
+.myp a{
+	display: block; /*把行内标签转块级标签*/
+}
+
+.myp a:link, .myp a:active, .myp a:hover, .myp a:visited{
+	color: #333;
+	text-decoration: none;  /*去掉下划线*/
+	font-size: 14px;
+}
+
+.myp span{
+	color: #757575;
+	font-size: 12px;
+	display: block;
+	margin-bottom: 12px;
+	margin-top: 3px;
+}
+.myp .price1{
+	width: 115px;
+	height: 32px;
+	text-align: right;
+	color: #ff6700;
+	font-size: 14px;
+	float: left;
+}
+.myp .price2{
+	width: 115px;
+	height: 32px;
+	text-align: left;
+	color: #757575;
+	font-size: 14px;
+	float: right;
+	text-decoration: middle;
+}
+
+.myp .comment{
+	display: none;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 235px;
+	height: 78px;
+	background-color: #ff6700;
+	z-index:2;  /*定义显示的层，值越大，层级越高，只对有定位属性的元素起作用*/
+}
+
+.myp .comment span{
+	color: #fff;
+	font-size: 12px;
+	display: block;
+	width: 175px;
+	margin: 8px auto;
+	line-height: 20px;
+	text-align: left;
+}
+
+.myp .comment span.writer{
+	color: #ff4500;
+	margin-top: 0px;
+}
+/*鼠标移入显示评论信息*/
+.myp:hover .comment{
+	display: block;
+}

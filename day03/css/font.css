@@ -1,0 +1,15 @@
+.myfont{
+	border:1px solid #dfe;
+	font-family: 微软雅黑;/*定义字体*/
+	font-size:14px;/*定义字体大小*/
+	color: #56adfe;/*定义颜色*/
+	font-weight:bolder;/*定义字体是否加粗*/
+	font-style: normal;
+	text-indent: 2em; /*定义文字缩进*/
+	letter-spacing: 1em;/*定义文字间距*/
+}
+
+/*标签选择器*/
+i{
+	font-style: normal;
+}

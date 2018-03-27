@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		@font-face {
+		  font-family: 'corpfont';
+		  src: url('./css/corpfont.ttf') format('truetype');
+		  font-weight: normal;
+		  font-style: normal;
+		}
+		.myico{
+			color: red;
+			font-family: corpfont;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #f00;
+		}
+		.myico:before{
+			content: '\e900';
+		}
+		.myico:after{
+			content: '\e90e';
+		}
+	</style>
+</head>
+<body>
+	<div class="myico"> </div>
+</body>
+</html>

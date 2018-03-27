@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音频视频标签</title>
+</head>
+<body>
+    <div class="container">
+        <h3>音频视频控制。。。</h3>
+        <h3>音频。。。</h3>
+        <audio id="myaudio" controls>
+            <!-- 根据当前浏览器的支持情况，智能选择其中一种音频类型 -->
+            <source src="./mv/menu.mp3" type="audio/mpeg">
+            <source src="./mv/menu.ogg" type="audio/ogg">
+        </audio>
+
+        <h3>视频。。。</h3>
+        <video id="myvideo" width="400" height="780" controls>
+            <source src="./mv/mikes.mp4" type="video/mp4">
+        </video>
+    </div>
+</body>
+</html>

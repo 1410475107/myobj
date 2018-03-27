@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>复习-第二天</title>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<div class="f">
+	<div class="s"></div>
+</div>
+
+	<div class="container">
+		<h3>第叁天知识点</h3>
+		<ol>
+			<li>
+				语义化标签：可以直接看做是div标签，他们都是块级标签；
+				<pre>
+					header：头部；
+					nav：表示导航；
+					footer：底部；
+					section：块内容；
+					aside：侧边栏；
+				</pre>
+			</li>
+			<li>
+				要求使用最新的html5标准。也就是：<!DOCTYPE html>
+			</li>
+			<li>
+				新标签：
+				<pre>
+					canvas：画布的意思，js可以在上面画线，画图；
+					video：视频标签。属性：controls：显示媒体控制面板，source指定视频的路径；
+					一个video标签可以指定多个视频文件，然后根据浏览器选择兼容的视频格式；
+					audio：音频标签；
+					progress:进度条；
+					mark：标记文字信息；
+				</pre>
+			</li>
+			<li>
+				css3新属性：
+				transition：实现过渡效果；
+				column：实现内容多列显示；
+			</li>
+			<li>
+				媒体查询：
+				根据不同的设备定义各自的样式
+				<pre>
+					@media screen and (max-width:960px){
+						定义普通的样式一样去定义；
+					}
+					@media screen and (max-width:768px){
+						定义普通的样式一样去定义；
+					}
+					@media screen and (max-width:480px){
+						定义普通的样式一样去定义；
+					}
+					@media screen and (max-width:320px){
+						定义普通的样式一样去定义；
+					}
+				</pre>
+			</li>
+
+			<li>
+				服务器端字体：
+				<pre>
+					@font-face{
+						/*指定自定义字体的名称，类似宋体、楷体等*/
+						font-family:myfont;
+						src:url(相对路径或绝对路径);
+					}
+					@font-face{
+						/*指定自定义字体的名称，类似宋体、楷体等*/
+						font-family:myfont123;
+						src:url(相对路径或绝对路径);
+					}
+				</pre>
+			</li>
+			<li>
+				flex弹性布局：
+				<pre>
+					1，把一个盒子转成flex容器：display:flex; 或者 display:inline-flex;
+					2，里面的子元素我们称为是  flex项目；
+					3，flex容器的6大属性：
+						①：flex-direction：定义flex项目的排列方向；
+							row代表是横向（x轴，主轴，main axis）;
+							column代表是垂直方向（y轴，侧轴，cross axis）;
+							reverse表示反向排列；
+						②：flex-wrap：定义flex容器填满以后是否换行；
+							nowarp：默认值，不换行，flex项目宽度自动缩小；
+							warp：容器填满以后，会自动换行；
+							warp-reverse：换行后反向排列；
+						③：flex-flow：flex-direction 和  flex-wrap合体（简写）；
+						④：justify-content：定义容器在主轴上的排版方式；
+							flex-start：左对齐；
+							flex-end：右对齐；
+							center：居中对齐；
+							space-between：两端对齐；
+							space-around：分配相同的空间；
+						⑤：align-items：定义了容器的项目在侧轴上的排列方式；
+							flex-start：从上往下；
+							flex-end：从下往上排；
+							center：垂直居中排；
+							baseline：每个项目的第一行文字的基线在一条线上；
+						⑥：align-content：多行容器在垂直方向的排版方式；
+					4，flex项目的4个属性：
+						①：order：默认值是0，是指项目在容器里面的排序，支持负值，越小排名越靠前；
+						②：flex-grow：相对值，设置项目的放大比例；
+						③：flex-shrink：相对值，设置项目的缩小比例，默认为1；
+						④：flex-basis：定义单个项目占用空间比例；
+						⑤：flex：是flex-grow、flex-shrink、flex-basis的简写；
+						⑥：align-self：定义单个项目在垂直方向的排列方式；
+				</pre>
+			</li>
+		</ol>
+	</div>
+</body>
+</html>

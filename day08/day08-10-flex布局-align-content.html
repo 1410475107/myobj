@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>align-items</title>
+	<style>
+		*{
+			padding:0;
+			margin: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		ul{
+			display: flex; /*让块级元素转成flex容器，行级使用的是inline-flex*/
+			flex-flow:row wrap;
+			/*边框线属性分解*/
+			border-width: 2px;
+			border-style: dashed;
+			border-color: #c01;
+			justify-content: space-between;
+			/*align-items: baseline;*/
+			align-content: center;
+			height: 600px;
+		}
+
+		ul li{
+			width: 300px;
+			/*height: 200px;*/
+			background-color: #f00;
+			margin: 2px;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>
+			2
+			8 <br>8 <br>8 <br>8 <br>8 <br>8 <br>	
+		</li>
+		<li>31<br>8<br>8</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>结构选择器</title>
+	<style>
+		:root{
+			/*background-color: #d34;*/
+		}
+		body{
+			background-color: #fff;
+		}
+
+		ul li:not(.li3){
+			height: 42px;
+			line-height: 42px;
+			background-color: #b21;
+			color: #fff;
+		}
+		ul li:hover{
+			background-color: #eee;
+			color: #333;
+			height: 42px;
+			line-height: 42px;
+		}
+	</style>
+</head>
+<body>
+	加点东西
+	<ul>
+		<li>选项1</li>
+		<li>选项2</li>
+		<li class="li3">选项3</li>
+		<li>选项4</li>
+		<li>选项5</li>
+	</ul>
+</body>
+</html>

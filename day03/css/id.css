@@ -1,0 +1,45 @@
+/*浏览器默认样式清除*/
+/*写CSS第一件事情就是清除默认样式*/
+*{
+	margin: 0;
+	padding: 0;
+	left:0;
+	top: 0;
+}
+
+/*ID选择器使用#开头*/
+#myid{
+	margin: 30px;
+	width: 600px;
+	height: 500px;
+	border:1px dashed #234;
+	text-align: center; /*文字对齐方式*/
+}
+/*后代选择器：选择器之间使用空格分开*/
+#myid p{
+	text-align: left;
+	text-indent: 2em;/*em:代表一个字符单位*/;
+}
+
+#mydiv p{
+	border:1px solid #f56;
+}
+#myid span{
+	color:#ccc;
+}
+
+/*群组选择器*/
+#myid i, #mydiv em{
+	font-style: normal;
+	color: #ccc;
+	font-size: 12px;
+	font-family: 楷体;
+}
+
+/*子代选择器*/
+#myid>i{
+	color: #FF0000;
+	font-weight: bolder;
+	font-size: 18px;
+	text-decoration: underline;
+}

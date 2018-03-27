@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>nth-child</title>
+	<style>
+		body  a[href]{
+			color: blue;
+		}
+
+		body a[href="mi.com"]{
+			color: red;
+		}
+		/*属性选择器：指定开始字符*/
+		body a[href^='www']{
+			color: #ddd;
+		}
+
+		/*属性选择器：指定结束字符*/
+		body a[href$="edu.cn"]{
+			color: green;
+		}
+
+		body a[href*='hqyj']{
+			font-weight: bolder;
+			color: #345;
+		}
+
+		/*定义表单元素的样式*/
+		#myform input[type="text"][name="username"], #myform input[type="password"]{
+			width: 300px;
+			height: 35px;
+			border: 1px solid #ddd;
+		}
+
+		#myform input[type="checkbox"]{
+			width: 25px;
+			height: 25px;
+			border: 1px solid #ddd;
+		}
+		#myform input[type="button"]{
+			width: 120px;
+			height: 32px;
+			line-height: 32px;
+			background-color: #eee;
+			border: 0;
+			outline: none;
+			cursor: pointer;
+		}
+		
+		#myform input[type="password"]:focus{
+			border-color: red;
+			outline: none;
+		}
+
+		/*#myform input[type="checkbox"][checked]{
+			width: 35px;
+			height: 35px;
+		}*/
+		#myform input[type="checkbox"]:checked{
+			width: 35px;
+			height: 35px;
+		}
+
+		a[href^='www'][href$='com']{
+			color: gray;
+		}
+	</style>
+</head>
+<body>
+	<a href="www.baidu.com">链接1</a> | 
+	<a href="mi.com">链接2</a> | 
+	<a href="jd.edu.cn">链接3</a> | 
+	<a href="http://www.hqyj.com"> 链接4 </a>
+
+	<form action="" id="myform">
+		请输入账号：<input type="text" 		name="username" id="username" />  <br>
+		请输入密码：<input type="password" 	name="passwd" 	id="passwd" />   <br>
+		请选择爱好：
+					<input type="checkbox" name="honey[]" id="l123" checked><label for="l123">爱好1</label>
+					<input type="checkbox" name="honey[]" id="" checked>爱好2
+					<input type="checkbox" name="honey[]" id="">爱好3
+					<input type="checkbox" name="honey[]" id="">爱好4
+					<input type="checkbox" name="honey[]" id="">爱好5
+					<br>
+
+		<input type="button" value="注册">			
+	</form>
+</body>
+</html>

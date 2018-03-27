@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>flex-wrap</title>
+	<style>
+		*{
+			padding:0;
+			margin: 0;
+		}
+		li{
+			list-style-type: none;
+		}
+		ul{
+			display: flex; /*让块级元素转成flex容器，行级使用的是inline-flex*/
+			flex-direction: row; 
+			/*flex-wrap: nowrap;*/
+			flex-wrap: wrap;
+			/*width: 800px;*/
+			height: 600px;
+			border: 1px solid #f2d;
+		}
+
+		ul li{
+			/*width: 200px;*/
+			height: 200px;
+			background-color: #f00;
+			margin: 2px;
+			order: 0;
+			flex-grow: 1;
+		}
+
+		ul li:nth-of-type(1){
+			/*flex-shrink: 1;*/
+			flex-basis: 100px;
+		}
+		ul li:nth-of-type(2){
+			flex-basis: 200px;
+			flex-shrink: 2;
+			align-self: flex-start;
+		}
+		ul li:nth-of-type(3){
+			flex-basis: 100px;
+			/*flex-shrink: 4;*/
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+</body>
+</html>

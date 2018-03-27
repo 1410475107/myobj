@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>扭曲</title>
+	<style>
+		.mydiv{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #eee;
+			background-color:rgba(201, 240, 20, .2);
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			z-index: 2;
+			transform: skew(0deg, 0deg);
+		}
+		.mydiv img{
+			width: 300px;
+			height: 300px;
+		}
+
+		.div1{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #eee;
+			background-color: #ddd;
+			position: absolute;
+			left: 100px;
+			top: 100px;
+			z-index: 1;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="mydiv"><img src="./image/img2.jpg" alt=""></div>
+	<div class="div1">123</div>
+
+</body>
+</html>

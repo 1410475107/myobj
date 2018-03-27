@@ -1,0 +1,41 @@
+.myimg{
+	width: 200px;
+	height: 200px;
+	border:1px solid #fd2;
+	/*定义背景颜色*/
+	background-color: #f2d;
+	color: #fff;
+}
+
+.mydvi{
+	width: 200px;
+	height: 200px;
+	border:1px solid #f45;
+	/*添加背景图片*/
+	background-image: url(../img/5a9dfd21N14ae841d.jpg);
+	/*背景图片定位*/
+	background-position: -30px  -150px;
+}
+
+/*背景精灵*/
+li{
+	width: 24px;
+	height: 30px;
+	background-image: url(../img/bg5.png);
+}
+
+.li2{
+	background-position: 0 -45px;
+}
+.li3{
+	background-position: 0 -90px;
+}
+.li4{
+	background-position: 0 -135px;
+}
+.li5{
+	background-position: 0 -175px;
+}
+.li6{
+	background-position: 0 -220px;
+}

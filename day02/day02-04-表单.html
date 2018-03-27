@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 设置文件字符编码 -->
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+	<body>
+		<p>这里是内容</p>
+		<form action="./day02-01-无序列表标签.html" method="POST">
+			<input type="text" name="tel" >
+			姓名：<input type="text" name="username" 	placeholder="请输入姓名" />  <br>
+			年龄：<input type="text" name="age" 		placeholder="请输入年龄" value="18" />  <br>
+			性别：
+				<!-- type="radio"的时候，如果是一组选项，name名称必须相同 -->
+				<!-- 默认选中隐私：添加checked属性 -->
+				<input type="radio" name="sex" value="1">男生
+				<input type="radio" name="sex" value="2">女  
+				<input type="radio" name="sex" value="3" checked="checked">隐私 <br>
+			爱好：
+				<!-- type="checkbox"的时候，如果是一组选项，name名称必须相同 -->
+				<input type="checkbox" name="honby" value="读书"> 读书 
+				<input type="checkbox" name="honby" value="看报"> 看报 
+				<input type="checkbox" name="honby" value="学习" checked="checked"> 学习 
+				<input type="checkbox" name="honby" value="运动" checked="checked"> 运动  <br>
+
+			专业：
+				<!-- select设置默认值：给option添加selected属性 -->
+				<select name="pro">
+					<option value="0">=请选择专业=</option>
+					<option value="1">嵌入式</option>
+					<option value="2" selected>H5</option>
+					<option value="3">AR/VR</option>
+					<option value="4">JAEE</option>
+					<option value="5">人工智能</option>
+				</select>   <br>
+			职业：
+				<!-- rows：属性定义了文本框的高度 -->
+				<!-- cols：定义了文本框的宽度 -->
+				<textarea name="" cols="100" rows="10">默认值</textarea>  <br>
+				<!-- type="file"：上传文件，可以是图像、文档、数据表等文件 -->
+			头像：<input type="file" name="header" />  <br>
+			密码：<input type="password" name="passwd" value="123456">  <br><br><br>
+			<input type="button" value="这里是一个普通按钮">
+
+			<!-- 恢复原始状态：type="reset" -->
+			<input type="reset" value="重置"> 
+			<!-- 提交按钮：type="submit" -->
+			<input type="submit" value="确定" />
+
+		</form>
+	</body>
+</html>
